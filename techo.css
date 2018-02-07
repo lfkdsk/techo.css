@@ -179,8 +179,8 @@ fieldset, img {
 /* img 添加边框 */
 img {
     background: white;
-    border-radius: .1rem;
-    padding: 0.5rem;
+    border-radius: .2rem;
+    padding: 0.3rem;
     box-shadow: 1px 2px 4px gray;
     text-align: center;
 }
@@ -447,6 +447,10 @@ sup.md-footnote {
     color: #6e4832;
 }
 
+.task-list {
+    list-style: none !important;
+}
+
 /* checked box 效果 */
 .task-list-item input {
     width: 1.25rem;
@@ -473,6 +477,7 @@ sup.md-footnote {
 
 .task-list-item input:checked:before,
 .task-list-item input[checked]:before {
+    -webkit-appearance: initial;
     background: #6e4832;
     border-width: 2px;
     display: inline-block;
